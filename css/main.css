@@ -86,6 +86,215 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   /* General Text Styles */
+
+   html {
+    font-size: 16px;
+   }
+
+   body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-align: left;
+   }
+
+   ul,
+   ol {
+    font-size: 1.125em;
+    list-style-type: none;
+   }
+
+   a {
+    color: black;
+    text-decoration: none;
+   }
+
+   h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25em;
+   }
+
+   h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.875em;
+    font-weight: 500;
+   }
+
+   h3,
+   h4 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125em;
+    font-weight: 500;
+    margin: 20px 0;
+   }
+
+
+   p {
+    font-size: .875em;
+    line-height: 1.285;
+   }
+
+   img {
+    width: 100%;
+   }
+
+   figure {
+          margin: 0;
+   }
+
+   address {
+   font-style: normal;
+   }
+
+
+   /* base format styles */
+
+     .content-wrapper {
+       width: 90%;
+       margin: 10px 0;
+     }
+
+   /* -------------------- Base Header - Footer Styles -------------------- */
+
+   header,
+   footer {
+    background-color: #CAC691;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+     }
+
+   header {
+    padding: 15px 0;
+
+   }
+
+   header .content-wrapper {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+   }
+
+
+   header nav {
+    width: 100%;
+    font-size: .75em;
+    font-weight: 150;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding-bottom: 10px;
+   }
+
+   header nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    padding-inline-start: 0;
+   }
+
+   header nav ul li {
+    font-size: 1.125em;
+    display:flex;
+
+   }
+
+   footer {
+    text-align: center;
+    flex-direction: column;
+   }
+
+   footer p {
+    margin: 0;
+    padding: 0;
+   }
+
+   footer .content-wrapper {
+    width: 55%;
+    margin: 50px 0;
+   }
+
+   footer .contact {
+    margin-bottom: 50px;
+   }
+
+   footer .social-icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+   }
+
+   footer .social-icons p {
+    background-color: #527158;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+
+   footer .social-icons p i {
+    font-size: 1.3125em;
+   }
+
+   footer .copyright {
+    margin: 20px 0;
+   }
+
+   /*--------------Mobile Styles-------------------- */
+
+   .hero-area {
+    background-color: #CAC691;;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+   }
+
+  /* .hero-area .content-wraper {
+     display:flex;
+     justify-content:center;
+     flex-flow: row wrap;
+   }*/
+
+   .hero-area h1 {
+     font-size: 2.25em;
+     font-family: 'Poppins', Helvetica, Arial, sans-serif;
+     font-weight: 500;
+     line-height: 1.2;
+     text-align: center;
+   }
+
+
+   .projects {
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+
+   }
+
+   .skills {
+     background-color: #CAC691;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+
+   }
+
+   .about {
+     background-color: white;
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+   }
 
 /* ==========================================================================
    Helper classes
@@ -260,4 +469,3 @@ textarea {
     page-break-after: avoid;
   }
 }
-
