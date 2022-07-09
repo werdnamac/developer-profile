@@ -105,17 +105,24 @@ textarea {
     list-style-type: none;
    }
 
-   a:hover {
+  li a:hover {
         display: block;
         background-color: #EEEFDA;
-        padding: 6px;
+        padding: 10px 10px;
         border-radius: 40%;
+
+
     }
 
 
    a {
     color: black;
     text-decoration: none;
+
+   }
+
+   a:hover {
+     color: #0047AB;
    }
 
    h1 {
@@ -214,6 +221,8 @@ textarea {
 
    }
 
+
+
    footer {
     text-align: center;
     flex-direction: column;
@@ -237,6 +246,7 @@ textarea {
     display: flex;
     justify-content: space-around;
     align-items: center;
+
    }
 
    footer .social-icons p {
@@ -288,6 +298,26 @@ textarea {
      flex-flow: row wrap;
 
    }
+   .live-wrapper {
+     display: flex;
+     justify-content: center;
+     white-space: nowrap;
+   }
+   .live-page {
+    display: inline-block;
+    background-color: #453E4F;
+    padding: 0.75rem 3.75rem;
+    border-radius: 30px;
+    color: white;
+    width: 50px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 1.2em;
+   }
+
+   .live-wrapper a:hover .live-page {
+     background-color: #B4C7D9;
+   }
 
    .skills {
      background-color: #CAC691;
@@ -309,9 +339,20 @@ textarea {
      text-decoration: underline;
    }
 
-   .about a:hover {
-     all: revert;
+   footer .social-icons {
+     margin-bottom:40px;
+     }
    }
+
+   footer .fontawesome-icon a:hover {
+     color:black;
+   }
+
+   .connect p {
+     margin-bottom: 6px;
+   }
+
+
 
 /* ==========================================================================
    Helper classes
