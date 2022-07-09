@@ -105,16 +105,6 @@ textarea {
     list-style-type: none;
    }
 
-  li a:hover {
-        display: block;
-        background-color: #EEEFDA;
-        padding: 10px 10px;
-        border-radius: 40%;
-
-
-    }
-
-
    a {
     color: black;
     text-decoration: none;
@@ -150,13 +140,7 @@ textarea {
     line-height: 1.285;
    }
 
-   img {
-    width: 100%;
-   }
 
-   figure {
-          margin: 0;
-   }
 
    address {
    font-style: normal;
@@ -168,6 +152,15 @@ textarea {
      .content-wrapper {
        width: 90%;
        margin: 10px 0;
+     }
+
+     img {
+      width: 90%;
+      height: auto;
+     }
+
+     figure {
+            margin: 0;
      }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
@@ -298,24 +291,42 @@ textarea {
      flex-flow: row wrap;
 
    }
-   .live-wrapper {
+
+   /*.the-projects article {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+   }*/
+
+    p.live-par {
+
      display: flex;
      justify-content: center;
      white-space: nowrap;
+     text-align: left;
+     margin-left: auto;
+     margin-right: auto;
    }
-   .live-page {
+    a.live-link {
     display: inline-block;
     background-color: #453E4F;
     padding: 0.75rem 3.75rem;
     border-radius: 30px;
-    color: white;
+
     width: 50px;
     text-transform: uppercase;
-    text-align: left;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    color: white;
     font-size: 1.2em;
+    display:flex;
+    justify-content: center;
    }
 
-   .live-wrapper a:hover .live-page {
+
+
+   a.live-link:hover {
      background-color: #B4C7D9;
    }
 
@@ -323,8 +334,39 @@ textarea {
      background-color: #CAC691;
      display: flex;
      justify-content: center;
+     align-items: center;
      flex-flow: row wrap;
 
+   }
+
+   .skills .content-wrapper {
+     display: flex;
+     justify-content: center;
+
+     flex-flow: row wrap;
+   }
+
+   .skills .web-dev {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+     flex-basis: 80%;
+     font-size: 1.25em;
+     text-align:center;
+   }
+   .skills h2 {
+     padding: 1px;
+     display: flex;
+     justify-content: center;
+   }
+
+   .skills-box {
+     background-color: #F7E8E8;
+     display:flex;
+     flex-basis: 85%;
+     justify-content: center;
+     align-items:center;
+     padding: 15px;
    }
 
    .about {
@@ -336,12 +378,13 @@ textarea {
 
    .about a {
      color: #0047AB;
-     text-decoration: underline;
+     text-decoration: none;
    }
+
 
    footer .social-icons {
      margin-bottom:40px;
-     }
+
    }
 
    footer .fontawesome-icon a:hover {
@@ -446,12 +489,47 @@ textarea {
   /* Style adjustments for viewports that meet the condition */
 }
 
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
   /* Style adjustments for high resolution devices */
 }
+
+@media only screen and (min-width: 768px) {
+/*Tablet styles here*/
+
+/* General styles */
+
+li a:hover {
+      display: block;
+      background-color: #EEEFDA;
+      padding: 10px 10px;
+      border-radius: 40%;
+
+  }
+
+
+.content-wrapper {
+  max-width: 640px;
+  margin: 100px 0;
+}
+
+h2 {
+  font-size: 2.25em;
+  line-height: 1.33;
+}
+
+h3,
+h4 {
+  font-size: 1.5em;
+  line-height: 1.25;
+}
+
+
+/* Header */
+
 
 /* ==========================================================================
    Print styles.
