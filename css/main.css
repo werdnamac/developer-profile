@@ -160,7 +160,7 @@ textarea {
      }
 
      figure {
-            margin: 0;
+      margin: 0;
      }
 
    /* -------------------- Base Header - Footer Styles -------------------- */
@@ -292,11 +292,36 @@ textarea {
 
    }
 
+   /*.projects h2, h3 {
+     display: flex;
+     justify-content: center;
+   }*/
+
    /*.the-projects article {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
    }*/
+/*
+   .the-projects {
+     display: flex;
+     justify-content: center;
+     flex-flow: row wrap;
+   }
+
+   .the-projects article {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+
+
+   }*/
+
+   .projects h2 {
+     text-align: center;
+   }
+
 
     p.live-par {
 
@@ -332,40 +357,35 @@ textarea {
 
    .skills {
      background-color: #CAC691;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-flow: row wrap;
+     display:block;
 
    }
 
-   .skills .content-wrapper {
-     display: flex;
-     justify-content: center;
-
-     flex-flow: row wrap;
+   .skills h2 {
+     padding-top: 30px;
+   }
+   .skills h2, h3 {
+     text-align: center;
    }
 
-   .skills .web-dev {
+
+
+
+   .boxes {
      display: flex;
      justify-content: center;
      flex-flow: row wrap;
-     flex-basis: 80%;
+
      font-size: 1.25em;
      text-align:center;
    }
-   .skills h2 {
-     padding: 1px;
-     display: flex;
-     justify-content: center;
-   }
+
 
    .skills-box {
      background-color: #F7E8E8;
-     display:flex;
+     justify-content:center;
      flex-basis: 85%;
-     justify-content: center;
-     align-items:center;
+
      padding: 15px;
    }
 
@@ -490,6 +510,7 @@ textarea {
 }
 
 
+
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
@@ -499,6 +520,142 @@ textarea {
 
 @media only screen and (min-width: 768px) {
 /*Tablet styles here*/
+
+.content-wrapper {
+  max-width: 740px;
+  margin: 100px 0;
+}
+
+/* General styles */
+
+h1 {
+
+ font-size: 3em;
+}
+
+.hero-area h1 {
+  font-size: 3em;
+
+h2 {
+
+ font-size: 2.5em;
+ font-weight: 500;
+}
+
+h3,
+h4 {
+ font-family: 'Poppins', sans-serif;
+ font-size: 1.5em;
+ font-weight: 500;
+ margin: 20px 0;
+}
+
+
+p {
+ font-size: 1em;
+ line-height: 1.285;
+}
+
+header nav {
+  width: 75%;
+}
+
+header nav ul li {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.hero-area .content-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.hero-area h1 {
+  width: 75%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+/*.projects {
+  display: flex;
+  justify-content: center;
+}
+
+.the-projects {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+}*/
+
+.the-projects article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  margin-bottom: 80px;
+  flex-basis: 50%;
+}
+
+.the-projects p {
+  width: 65%
+  <!-- long paragraphs, so change flex to start --!>
+  display: flex;
+  align-items: start;
+}
+
+.features article {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-flow: column wrap;
+  flex-basis: 50%;
+}
+
+
+
+
+
+
+.skills  {
+  display: flex;
+  flex-flow: column wrap;
+}
+
+
+.skills h2, h3 {
+  padding: 1px;
+  display: flex;
+  justify-content: center;
+}
+
+.skills .web-dev .boxes {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: row wrap;
+}
+
+.skills-box {
+  background-color: #F7E8E8;
+  display:flex;
+  width: 80px;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+
+/*.the-projects article figure {
+  display: flex;
+  justify-content: center;
+}*/
+
+}
+
+@media only screen and (min-width:1200px) {
+/*Desktop styles here*/
 
 /* General styles */
 
@@ -527,7 +684,7 @@ h4 {
   line-height: 1.25;
 }
 
-
+}
 /* Header */
 
 
