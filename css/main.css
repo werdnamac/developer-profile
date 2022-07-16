@@ -459,11 +459,33 @@ textarea {
      margin-top: 40px;
    }
 
-   footer .copyright {
+
+
+   /*.beauty-wrapper {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+   }*/
+
+   .beauty {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-flow: row wrap;
+   }
+
+   .beauty h3 {
      width: 100%;
    }
 
+   .beauty p {
+     width: 80%;
+     text-align: left;
+   }
 
+   footer .copyright {
+     width: 100%;
+   }
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -811,7 +833,7 @@ article.about figure {
 }
 
 .andy p {
-  width: 80%;
+  width: 70%;
   padding-top: 0;
   padding-bottom: 0;
   margin-top: 8px;
@@ -836,19 +858,11 @@ footer .social-icons {
 
  width: 400px;
 }
-/*h2 {
-  font-size: 2.25em;
-  line-height: 1.33;
+
+.beauty {
+  width: 70%;
+  text-align: left;
 }
-
-h3,
-h4 {
-  font-size: 1.5em;
-  line-height: 1.25;
-}
-
-}*/
-
 
 
 /* ==========================================================================
