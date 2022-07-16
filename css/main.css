@@ -428,15 +428,25 @@ textarea {
    .andy h3 {
      width: 75%;
      text-align: center;
+     margin-top: 0;
+     padding-top: 0;
+     margin-bottom: 0;
+     margin-bottom: 0;
    }
 
    .andy p {
      width: 80%;
      text-align: left;
+     margin-top: 0;
    }
 
 
    .about a {
+     color: #0047AB;
+     text-decoration: none;
+   }
+
+   .beauty a {
      color: #0047AB;
      text-decoration: none;
    }
@@ -461,30 +471,35 @@ textarea {
 
 
 
-   /*.beauty-wrapper {
+   .beauty-wrapper {
      display: flex;
      justify-content: center;
-     align-items: center;
-   }*/
+     flex-flow: row wrap;
+   }
 
    .beauty {
      display: flex;
      justify-content: center;
-     align-items: center;
+
      flex-flow: row wrap;
    }
 
    .beauty h3 {
-     width: 100%;
+     width: 75%;
+     text-align:center;
+     margin-top: 80px;
    }
 
    .beauty p {
      width: 80%;
      text-align: left;
+     margin-top: .5rem;
+     margin-bottom: .5rem;
    }
 
    footer .copyright {
      width: 100%;
+
    }
 /* ==========================================================================
    Helper classes
@@ -749,6 +764,15 @@ footer .social-icons {
   margin-top: 0;
 }
 
+
+.beauty h3 {
+  width: 60%;
+}
+
+.beauty p {
+  width: 60%;
+}
+
 }
 
 @media only screen and (min-width:1200px) {
@@ -860,8 +884,23 @@ footer .social-icons {
 }
 
 .beauty {
-  width: 70%;
-  text-align: left;
+  width: 85%;
+}
+
+.beauty p {
+  width: 85%;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.beauty h3 {
+  font-size: 2rem;
+  line-height: 1.3;
+  width: 80%;
+  padding-top: 0;
+  margin-top: 80px;
 }
 
 
